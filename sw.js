@@ -5,6 +5,7 @@ const assets = [
     "/manifest.json",
     "/img/rickmorty.png",
     "src/script.js",
+    "/sw.js",
     "/src/style.css"
 ];
 
