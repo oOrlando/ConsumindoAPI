@@ -3,9 +3,9 @@ const assets = [
     "/",
     "/index.html",
     "/manifest.json",
-    "/img/rickmorty.png",
-    "/src/script.js",
+    "/img/rickmorty.png",    
     "/sw.js",
+    "/src/script.js",
     "/src/style.css"
 ];
 
