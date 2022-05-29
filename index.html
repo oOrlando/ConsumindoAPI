@@ -5,13 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"  href="./src/style.css">
+    <link rel="manifest" href="manifest.json" />
     <title>Rick E Morty</title>
 </head>
 
 <body>
     <header>
         <h1>Rick e Morty - Personagens</h1>
+        <div class="column">
+            <p>Clique na imagem abaixo para ativar o conta-gotas</p>
+            <img id="eyeDropperIcon" src="img/rickmorty.png" alt="imagem inicial">
+            <p>A cor hexadecimal do pixel selecionado é  <b><span id="colorCode">???</span></b></p>            
+        </div>
     </header>
+
       
         <div id="lista">
         </div>         

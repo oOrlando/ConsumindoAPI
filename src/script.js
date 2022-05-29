@@ -31,3 +31,31 @@ const listar = (characters) => {
 
 
 getPersonagem(api);
+
+
+// Create an EyeDropper object
+let eyeDropper = new EyeDropper();
+
+// Enter eyedropper mode
+let icon = document.getElementById("eyeDropperIcon")
+let color = document.getElementById("colorCode")
+// You may use the dropper only on the cat!
+icon.addEventListener('click', e => {
+    eyeDropper.open()
+    .then(colorSelectionResult => {
+        // returns hex color value (#RRGGBB) of the selected pixel
+        color.innerText = colorSelectionResult.sRGBHex;
+    })
+    .catch(error => {
+        // handle the user choosing to exit eyedropper mode without a selection
+    });
+});
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function () {
+    navigator.serviceWorker
+      .register("/sw.js")
+      .then(res => console.log("service worker registered"))
+      .catch(err => console.log("service worker not registered", err))
+  })
+}
