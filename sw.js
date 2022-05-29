@@ -1,4 +1,4 @@
-const CACHE_NAME = "itapeshopping-v8";
+const CACHE_NAME = "rickmorty-v2";
 const assets = [
     "/",
     "/index.html",
