@@ -1,6 +1,5 @@
 const CACHE_NAME = "rickmorty-v2";
 const assets = [
-    "/",
     "index.html",
     "manifest.json",
     "img/rickmorty.png",    
