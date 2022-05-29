@@ -1,12 +1,12 @@
 const CACHE_NAME = "rickmorty-v2";
 const assets = [
     "/",
-    "/index.html",
-    "/manifest.json",
-    "/img/rickmorty.png",    
-    "/sw.js",
-    "/src/script.js",
-    "/src/style.css"
+    "index.html",
+    "manifest.json",
+    "img/rickmorty.png",    
+    "sw.js",
+    "src/script.js",
+    "src/style.css"
 ];
 
 self.addEventListener('install', (e) => {
